@@ -1,0 +1,366 @@
+/************************************************
+	Font family
+ ************************************************/
+ @font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'source_sans_problack';
+    src: url('../fonts/sourcesanspro-black-webfont.eot');
+    src: url('../fonts/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-black-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-black-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_problack_italic';
+    src: url('../fonts/sourcesanspro-blackitalic-webfont.eot');
+    src: url('../fonts/sourcesanspro-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-blackitalic-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-blackitalic-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-blackitalic-webfont.svg#source_sans_problack_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../fonts/sourcesanspro-bold-webfont.eot');
+    src: url('../fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('../fonts/sourcesanspro-light-webfont.eot');
+    src: url('../fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/************************************************
+	Global styles starts here
+ ************************************************/
+body{background-image:  ; color: #888888; font-size: 14px; line-height: 24px;}
+h1, h2, h3, h4, h5, h6{margin: 0;}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+p{padding-bottom: 25px; margin: 0;}
+.last{padding-bottom: 0;}
+.ruler{border-bottom: 1px solid #c9c9c9;}
+.img-spacing{margin-right: 30px; margin-bottom: 30px;}
+
+/************************************************
+	Menu styles starts here
+ ************************************************/
+.dropbtn {
+    background-color: #34b091;
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 30px;
+    font-family: 'source_sans_problack';
+text-transform: uppercase;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #1f6b58;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #F4D03F  }
+
+.show {display:block;}
+/* ----------------------------------------------------------------------------------------------------------*/
+
+        .main-container{margin:0 auto; padding: 0;  height:auto; overflow:hidden;}
+	.header{ height:107px;clear:both;background:#8B4513}
+	.topmenu{  height:35px;clear:both;background:#CD853F;align-content: center;
+}	
+	
+		
+/* --- END main layout --- */
+
+/*------------ header Slider Div css --------------------------*/
+	.logo{ width:425px; height:76px ; padding:15px; margin:0px; float:left;}
+	.top_menu{width:500px; height:76px ; padding:15px; float:right;}
+	
+	.header .header-topmenu { margin:0px; padding:0px; clear:both;width:400px; height:40px; }
+	.header .header-topmenu ul{list-style:none; display:inline; float:right;}
+	.header .header-topmenu  li{display:inline; width:auto; height:13px; color:#fff; }
+	.header .header-topmenu  li a{font:normal 12px Arial, Helvetica, sans-serif; color:#fff;  padding:12px 5px 0px 5px; text-decoration:none;}
+	.header .header-topmenu li a:hover{font:normal 12px Arial, Helvetica, sans-serif; color:#2b210d; text-decoration:underline;}
+
+	/* Top search */
+
+
+
+
+
+	.search { padding:0px 0 0 0px; margin:0; }
+	.search div  { display:block; float:right; padding:0;}
+	.search span { display:block; float:left; background: white; width:226px; padding:0; height:31px; }
+	.search div .keywords { width:175px; line-height:14px;  float:left; background:none; border:0; padding:9px 10px 0 0px; margin:0px 0 0 26px; font:normal 12px Arial, Helvetica, sans-serif; color:#858383;}
+	* html .search div .keywords { padding:8px 10px 0 0px; }
+	.search div .button {  background:	#FFA500; border:none; outline:none; display:block; width:66px; height:28px; cursor:pointer; margin:2px 0px 0px 3px; padding:0px 3px 2px 4px; color:#fff; float:left; text-align:center; font-weight:600;}
+	.search div .button:hover{ background:url(../images/button_over.png)no-repeat;}
+
+
+	
+	
+	
+		/*------------------------ Main Top Menu CSS ------------------------*/
+	
+	
+
+/* ----------------------------------------------------------------------------------------------------------
+	
+.site-name{display: inline-block;}
+.site-name h1{margin: 0; font-size: 44px; color: #34b091; font-family: 'source_sans_probold'; text-transform: uppercase; letter-spacing: 2px;}
+.site-name h2{font-size: 18px; line-height: 24px; color: #cac8c8; font-family: 'source_sans_prolight';}
+.menu{text-align: center; background: #34b091; height: 52px;}
+.navbar{display: inline-block; margin-bottom: 0;}
+
+.navbar-nav > li > a{color: #fff; font-size: 16px; background-image: none; border: none; font-family: 'source_sans_probold'; text-transform: uppercase; padding: 15px 0px; padding-right: 40px;}
+.navbar-nav > li > a:hover{color: #888888; background: none;}
+
+.mini-menu{display: none;}
+    .mini-menu .selectnav{display: none; width: 100%;background: #3b3e4a;font-weight: 600;padding: 10px;height: 42px; color: #fff; border-radius: 5px; cursor: pointer; outline: 0; border:none !important;}
+    .selectnav select{appearance: none; border:none !important;}
+    .mini-menu label {position:relative; width: 100%;}
+    .mini-menu label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#fff;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:14px; top:14px;
+    padding:0 0 2px;
+
+    position:absolute;
+    pointer-events:none;
+    }
+    .mini-menu label:before {
+    content:'';
+    right:6px; top:10px;
+    width: 25px; height: 25px;
+    background:#3b3e4a;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+    }
+
+
+
+/* Root = Horizontal, Secondary = Vertical */
+	.navmenu {  margin: 5px 0px 0px 200px;  border: 0 none;  padding: 0;  width: 1072px; /*For KHTML*/  list-style: none;  height: 35px;  float:left;  position:relative; z-index:1000;}
+	.navmenu li {  margin: 0;  border: 0 none;  padding: 0;  float: left; /*For Gecko*/  display: inline;  list-style: none;  position: relative;  height: 18px;  background:none;}
+	.navmenu ul { background:#8B4513;  margin: 0;  border: 0 none;  padding: 0;  width: 200px;  list-style: none;  display: none;  position: absolute;  top: 23px;  left: 0; -moz-border-radius: 3px; -webkit-border-radius:3px;}
+	.navmenu ul li {  float: none; /*For Gecko*/  display: block !important;  display: inline; /*For IE*/  height: auto;}
+	/* Root Menu */
+	.navmenu a { font:normal 12px Arial, Helvetica, sans-serif ; text-decoration:none; color:#fff; font-weight:bold; display:block;  padding: 4px 10px 4px 10px; margin:5px 10px 0px 15px;  float: none !important; /*For Opera*/  float: left; /*For IE*/   height: auto !important;  height: 100%; /*For IE*/}
+	
+
+	/* Root Menu Hover Persistence */
+	.navmenu a:hover,
+	.navmenu li:hover a,
+	.navmenu li.iehover a {  color:#ededed; background:#8B4513; -moz-border-radius: 3px; -webkit-border-radius:3px;}
+	
+	
+		/* 2nd Menu */
+	.navmenu  ul{ margin:3px 0 0 0; padding:3px 0 6px 0 ;  }
+	.navmenu li:hover li a,
+	.navmenu li.iehover li a {  float: none;  color: #FFF; width:160px;}
+	
+	* html .navmenu  ul{ width:200px; background:#8B4513;}	
+	* html .navmenu li ul {top:25px;}
+	
+	/* 2nd Menu Hover Persistence */
+	.navmenu li:hover li a:hover,
+	.navmenu li:hover li:hover a,
+	.navmenu li.iehover li a:hover,
+	.navmenu li.iehover li.iehover a {  background:#cd853f;  color: #FFF;  -moz-border-radius: 3px; -webkit-border-radius:3px;}
+		
+	/* 3rd Menu */
+	.navmenu li:hover li:hover li a,
+	.navmenu li.iehover li.iehover li a {  background:#8B4513;  color: #666;}
+	/* 3rd Menu Hover Persistence */
+	.navmenu li:hover li:hover li a:hover,
+	.navmenu li:hover li:hover li:hover a,
+	.navmenu li.iehover li.iehover li a:hover,
+	.navmenu li.iehover li.iehover li.iehover a {  color:#8B4513; background-color:#8B4513;  -moz-border-radius: 3px; -webkit-border-radius:3px;}
+	/* 4th Menu */
+	.navmenu li:hover li:hover li:hover li a,
+	.navmenu li.iehover li.iehover li.iehover li a {  background: #cd853f;  color: #666;}
+	/* 4th Menu Hover */
+	.navmenu li:hover li:hover li:hover li a:hover,
+	.navmenu li.iehover li.iehover li.iehover li a:hover {  color:#ededed; background-color:#8B4513;  -moz-border-radius: 3px; -webkit-border-radius:3px;}
+	.navmenu ul ul,
+	.navmenu ul ul ul {  display: none;  position: absolute;  top: 0;  left: 160px;}
+	
+	/* Do Not Move - Must Come Before display:block for Gecko */
+	.navmenu li:hover ul ul,
+	.navmenu li:hover ul ul ul,
+	.navmenu li.iehover ul ul,
+	.navmenu li.iehover ul ul ul {  display: none;}
+	
+	.navmenu li:hover ul,
+	.navmenu ul li:hover ul,
+	.navmenu ul ul li:hover ul,
+	.navmenu li.iehover ul,
+	.navmenu ul li.iehover ul,
+	.navmenu ul ul li.iehover ul {  display: block;}
+	
+
+/************************************************
+	generic styles starts here
+ ************************************************/
+.featured-block{padding:55px 0; overflow: hidden;}
+.featured-block .block{}
+.featured-block .block .thumbnail{box-shadow: 0 3px 3px 0 #e0e0e0;}
+.featured-block .caption{padding: 25px 15px;}
+.featured-block .caption h1{font-size: 18px; line-height: 24px;color: #34b091; text-transform: uppercase;font-family: 'source_sans_probold';  padding-bottom: 10px; letter-spacing: 1px;}
+.featured-block .caption p{font-size: 14px; line-height: 24px; color: #888888;font-family: 'source_sans_proregular';}
+.featured-block .caption .btn{color: #fff; background: #34b091; font-size: 12px; font-family: 'source_sans_problack'; border-radius: 30px; text-transform: uppercase; line-height: 13px;}
+.featured-block .caption .btn:hover{color: #fff; background: #454855; transition:all 1s;}
+
+
+.featured-item{padding:55px 0;overflow: hidden;}
+.featured-item .block{overflow: hidden;}
+.featured-item .block ul{margin: 0;overflow: hidden; padding: 0;}
+.featured-item .block ul li{list-style: none;float: left;}
+.featured-item .block .block-title{padding-bottom: 30px;}
+.featured-item .block .block-title h1{font-size: 28px; line-height: 32px; color: #454855; text-transform: uppercase;font-family: 'source_sans_probold'; letter-spacing: 1px;}
+.featured-item .block .block-title h2{font-size: 18px; line-height: 24px; color: #454855; font-family: 'source_sans_prolight';}
+
+
+.user-info{overflow: hidden; float: left;}
+.user-info .icon{margin-right: 30px; background: #34b091; color: #fff; border-radius: 10px;
+                font-size: 25px; padding: 22px; line-height: 25px; width: 70px; height: 70px; float: left;}
+.user-info .icon:hover{background: #454855; color: #fff; transition:all 1s;}
+.user-info h1{font-size: 18px; line-height: 24px; color: #3b3e4a;font-family: 'source_sans_probold'; padding-bottom: 10px; text-transform: uppercase;}
+.user-info p{}
+
+.block .panel-default > .panel-heading {background: #fff;color: #34b091; font-size: 16px; padding: 0;}
+.block .panel-default > .panel-heading .panel-title{line-height: 40px;}
+.block .panel-default > .panel-heading .panel-title > a:hover{text-decoration: none;}
+.block .panel-default > .panel-collapse{background: #f0f0f0;color: #989898; font-size: 14px;}
+.block .panel-default > .panel-collapse .panel-body {padding: 20px 15px;}
+.block .panel-group .panel + .panel {
+margin-top: 10px;
+}
+
+.accordion-caret .accordion-toggle:hover {
+        text-decoration: none;
+    
+    }
+    
+.accordion-caret .accordion-toggle:before {
+    
+    vertical-align: -1px;
+    
+    border-bottom: 0;
+    line-height: 0;
+}
+.accordion-caret .accordion-toggle:not(.collapsed):before {
+    
+    float: right;
+    color:#000;
+    display:inline-block;
+    content: url(../img/minus-sign.png);
+
+    
+}
+.accordion-caret .accordion-toggle.collapsed:before {
+       
+    color:#fff;float: right;
+      content: url(../img/plus-sign.png);
+    
+}
+.panel-title .accordion-toggle.collapsed{padding-left: 10px;}
+.panel-title .accordion-toggle:not(.collapsed){background: #3b3e4a !important; display: block; padding-left: 10px; color: #fff;}
+
+
+.featured-content{overflow: hidden; padding: 55px 0;}
+.featured-content .block{}
+.featured-content .block img{float: left;}
+.featured-content .block h1{font-size: 18px; line-height: 24px; color: #454855; padding-bottom: 15px;font-family: 'source_sans_probold'; text-transform: uppercase;}
+.featured-content .block .btn{color: #fff; background: #34b091; font-size: 12px; font-family: 'source_sans_problack'; border-radius: 30px; text-transform: uppercase; line-height: 13px;}
+
+.featured-content .block .btn:hover{color: #fff; background: #454855; transition:all 1s;}
+/************************************************
+	sidebar styles starts here
+ ************************************************/
+
+/************************************************
+	Footer styles starts here
+ ************************************************/
+.footer-wrapper{background: #CD853F ;}
+.footer{background:#A8A828 ;}
+
+
+/************************************************
+    Responsive Tweaks starts here
+ ************************************************/

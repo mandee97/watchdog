@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="kasani sreekanth" content="">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to Ministry of Rural Development (Govt. of India)</title>
+        <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom-styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/handlebars-v4.0.5.js"></script>
+    <script type="text/javscript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+
+      
+  <script type="text/javascript">
+        $(document).ready(function () {
+            //slides the element with class "menu_body" when paragraph with class "menu_head" is clicked 
+            $("#firstpane p.menu_head").click(function () {
+                $(this).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+                $(this).siblings();
+            });
+
+        });
+
+        function isAlphaNumeric(val) {
+            if (val.match(/^[a-zA-Z0-9\s!@#$%^*(){}.,\[\]\/\\]+$/))
+            { return true; }
+            else
+            { return false; }
+        }
+
+        function fnSiteSearch() {
+            var searchbox = document.getElementById('searchbox').value
+
+            if (searchbox == "" || searchbox == "Search...") {
+                alert("Enter search value");
+                document.getElementById('searchbox').focus();
+                return false;
+            }
+            else if (!isAlphaNumeric(searchbox)) {
+                alert("Enter valid search value");
+                document.getElementById('searchbox').focus();
+                return false;
+            }
+            return true;
+
+        }
+
+    </script>
+
+
+
+  </head>
+
+  <body>
+
+ <!--MAIN PANEL DIV START-->
+    <div class="main-container">
+        <div class="header">
+            <!--HEADER PANEL DIV START-->
+            <div class="logo"><a href="http://rural.nic.in/netrural/rural/index.aspx">
+                <img src="img/logo.png" width="425" height="76" alt="Ministry of rural development :: Govt. of India" title="Ministry of rural development :: Govt. of India" /></a></div>
+            <div class="top_menu">
+                <div class="header-topmenu">
+                    <ul>
+                        <ul>
+                            <li><a href="https://www.facebook.com/IndiaRuralDev" target="_self">
+                                <img src="http://rural.nic.in/netrural/rural/sites/images/Rural_facebook.png" width="20px" height="20px" style="margin-bottom: -6px;" /></a></li>
+                           
+                            <li>|</li>
+                            <li><a href="http://rural.nic.in/netrural/rural/index.aspx">Home</a></li>
+                            <li>|</li>
+                            <li><a href="sites/RD_SITEMAP.htm">Site Map</a></li>
+                    <li>|</li>
+                            <li><a href="http://rural.nic.in/netrural/rural/sites/contact-us.aspx" target="_self">Contact Us</a></li>
+                     <li>|</li>
+                            <li><a href="signout.html" target="_self">Sign out</a></li>
+                        </ul>
+                </div>
+                <div class="search">
+                    <div name="search" method="get" action="http://www.google.com/search" target="_self">
+                        <span>
+                            <input name="q" type="text" class="keywords" id="searchbox" maxlength="50" value="Search..." onblur="if(this.value=='') this.value='Search...'" onfocus="if(this.value =='Search...' ) this.value=''" />
+                            <input name="sitesearch" value="rural.nic.in" type="hidden" />
+                        </span>
+                        <input name="Search" type="submit" class="button" id="Search" value="Search" onclick="javascript: return fnSiteSearch();" />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--HEADER PANEL DIV END-->
+        <div class="topmenu">
+            <!--TOP MENU PANEL DIV START-->
+
+            <ul class="navmenu">
+                <li><a href="http://rural.nic.in/netrural/rural/sites/about-the-ministry.aspx" class="top_link">ABOUT THE MINISTRY</a></li>
+                <li><a href="#">DEPARTMENTS</a>
+
+                    <ul>
+                        <li><a href="http://rural.nic.in/netrural/rural/sites/programmes-schemes.aspx" target="_self">DEPARTMENT OF RURAL DEVELOPMENT</a></li>
+                       
+                        
+                        <li><a href="http://dolr.nic.in/" target="_self">DEPARTMENT OF LAND RESOURCES</a></li>
+                    </ul>
+                </li>
+                
+             
+                <li><a href="#">LINKS</a>
+                    <ul>
+                       
+                        
+                        <li><a href="http://www.egazette.nic.in/">e-GAZETTE</a></li>
+                        <li><a href="http://evisitors.nic.in/">eVMS</a></li>
+                       
+                        <li><a href="http://rural.nic.in/netrural/rural/sites/Upload_Letters.aspx">UPLOAD</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="http://rural.nic.in/netrural/rural/sites/right-information-act.aspx">RTI</a></li>
+                
+                <li><a href="http://rural.nic.in/netrural/rural/sites/Citizen_Charter.aspx">CITIZEN'S CHARTER</a></li>
+                <li><a href="#">eBOOK</a>
+                    <ul>
+                        <li><a href="http://rural.nic.in/netrural/rural/sites/online_eBook/MORD.html">VIEW ONLINE</a></li>
+                        <li><a href="http://rural.nic.in/netrural/rural/sites/MORD_eBook.zip">DOWNLOAD OFFLINE</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="http://rural.nic.in/netrural/rural/sites/Digital_Payment.aspx">DIGITAL PAYMENTS</a>
+                    
+
+            </ul>
+
+        </div></br>
+</hr>
+  <!--TOP MENU PANEL DIV END-->
+
+
+
+<!--=====================================================================================================-->
+<center><h1> SCHEMES OF MoRD</h1></center>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+ <div class="container">
+      <div class="featured-block">
+        <!-- Example row of columns -->
+        <div class="row">
+           <div class="col-md-3">
+              <div class="block">
+                <div class="thumbnail">
+                    <img src="img/pmay.png" alt="PMAY">
+                    <div class="caption">
+ <center>                       <h1>PMAY</h1> </center> 
+                      <p></br>Pradhan Mantri Awas Yojana.</p>
+                      <a class="btn" href="http://iay.nic.in/netiay/home.aspx" target="_self">view website</a> 
+ 
+<br/><br/>
+<a class="btn" href="pmay.html" target="_self">view Statistics</a>
+
+              </div></div></div>
+
+   </div>
+
+           <div class="col-md-3">
+              <div class="block">
+                <div class="thumbnail">
+                    <img src="img/pmrd.png" alt="PMRD">
+                    <div class="caption">
+ <center>                       <h1>PMRD</h1> </center> 
+                      <p>Prime Minister's Rural Development fellows scheme.</p>
+                      <a class="btn" href="http://rural.nic.in/pmrdfs/" target="_self">view website</a> <br/><br/>
+<a class="btn" href="mgnregs.html" target="_self">view Statistics</a> 
+                    </div>
+                </div>
+              </div>
+            </div>
+
+           <div class="col-md-3">
+              <div class="block">
+                <div class="thumbnail">
+                    <img src="img/NRuM.png" alt="NRuM">
+                    <div class="caption">
+                    <center> <h1>NRuM</h1></center>
+                      <p></br>National Rurban Mission.</br> </p>
+                      <a class="btn" href="http://rurban.gov.in/" target="_self">view website</a> <br/><br/>
+<a class="btn" href="pmay.html" target="_self">view Statistics</a> 
+                    </div>
+                </div>
+              </div>
+            </div>
+   
+
+    
+            <div class="col-md-3">
+            <div class="block">
+            <div class="thumbnail">
+              <img src="img/pmgsy.png" alt="PMGSY" >
+              <div class="caption">
+                 <center> <h1>PMGSY</h1> </center> 
+                <p><br>Pradhan Mantri Gram Sadak Yojana.</p>
+                <a class="btn" href="http://pmgsy.nic.in/"  target="_self">view website</a> <br/><br/>
+<a class="btn" href="pmgsy.html" target="_self">view Statistics</a> 
+              </div>
+              </div>
+            </div>
+            </div></div></div>
+<div class="container">
+      <div class="featured-block">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="block">
+            <div class="thumbnail">
+              <img src="img/mgnrea.png" alt="MGNREGA">
+              <div class="caption">
+               <center> <h1>MGNREGA</h1> </center> 
+                <p>Mahatma Gandhi National Rural Employment Guarentee Act.</p>
+           <a class="btn" href="http://nrega.nic.in/netnrega/home.aspx" target="_self">view website</a> <br/><br/>
+<a class="btn" href="mgnregs.html" target="_self">view Statistics</a> 
+              </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+              <div class="block">
+                <div class="thumbnail">
+                    <img src="img/nsap.png" alt="NSAP">
+                    <div class="caption">
+                      <center>  <h1>NSAP</h1> </center> 
+                      <p>National Social Assistance Programme.</p>
+                      <a class="btn" href="http://nsap.nic.in/" target="_self">view website</a> <br/><br/>
+<a class="btn" href="pmgsy.html" target="_self">view Statistics</a> 
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="block">
+                <div class="thumbnail">
+                  <img src="img/disha.png" alt="DISHA">
+                  <div class="caption">
+ <center>                     <h1>DISHA</h1> </center> 
+                    <p>Development Initiatives for Social and Human Action.</p>
+                    <a class="btn" href="http://rural.nic.in/netrural/rural/sites/Disha_main.aspx" target="_self">view website</a> <br/><br/>
+<a class="btn" href="nrlm.html" target="_self">view Statistics</a> 
+                  </div>
+                  </div>
+              </div>
+            </div>
+
+
+           <div class="col-md-3">
+              <div class="block">
+                <div class="thumbnail">
+                    <img src="img/ddu.png" alt="DDU-GKY">
+                    <div class="caption">
+ <center>                       <h1>DDU-GKY</h1> </center> 
+                      <p>Deen Dayal Upadhyaya Grameen Kaushalya Yojana.</p>
+                      <a class="btn" href="http://ddugky.gov.in/" target="_self">view website</a> <br/><br/>
+<a class="btn" href="ddugky.html" target="_self">view Statistics</a> 
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+             </div>   
+        </div>  </div>
+
+<!-- ==============================add a scheme ==================== -->
+<img id="loginImg" onclick="document.getElementById('id01').style.display='block'" src="img/5.png">
+</img>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+    
+  <!-- Form Module-->
+  <div class="modal-content animate">
+    <div class="module form-module">
+      <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+        <div class="tooltip">as guest</div>
+      </div>
+      <div class="form">
+        <h2>add a  scheme </h2>
+        <form method="post">
+          <input type="checkbox" name="newScheme" value="new" checked>new-scheme
+          <input type="checkbox" name="subScheme" value="sub">sub-scheme
+          <input type="text" placeholder="scheme name" id="scheme_name" Required/>
+          <input type="text" placeholder="parent scheme" id="parent_scheme" Required/>
+          <input type="text" placeholder="url pointing to csv*" id="scheme_url" Required/>
+          <input type="text" placeholder="title of scheme" id="title" Required/>
+          <button type="submit" onClick=validate()>submit</button>
+        </form>
+      </div>
+     <div class="cta">Ministry Of Rural Development </div>
+    </div>
+  </div>
+</div>
+<!-- ############################ FROM LOGIN.HTML ######################### -->
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+   </script>
+</div><!--MAIN PANEL DIV END-->
+
+  <!-- ============================================================================================================================================ -->
+  
+<div class="footer-wrapper" style="height: 70px">
+ 
+   
+                
+                    <center>
+                              <a href="http://naco.gov.in/"  target="_self"><img src="img/3.jpg"></a>
+                              <a href="http://mygov.in"  target="_self"><img src="img/2.jpg"></a>
+                              <a href="http://www.cvc.nic.in/ "  target="_self"><img src="img/1.jpg"></a>
+                              <a href="http://digitalindia.gov.in"  target="_self"><img src="img/4.jpg"></a>
+                             
+
+                            </center>
+          
+                </div>
+                  
+                    <div class="footer">  <center>
+                       <span style="color:black"> Site designed and developed by<span style="font-weight: bold;color:black"> National Informatics Centre</span><br />
+                        <span style="height: 18px; text-align: center; margin-top: 11px;color:black">Contents provided and maintained by </span><span style="font-weight: bold;color:black">Department of Rural Development, Ministry of Rural Development, Govt. of India.</span>
+                    </center></div>
+                    
+                
+    <!--footer Panel DIV END-->
+
+    <!-- ================================================= -->
+  
+   
+    <script src="js/bootstrap.js"></script>
+     <script>
+
+<!--Close the dropdown if the user clicks outside of it-->
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+
+
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    
+    
+  </body>
+</html>

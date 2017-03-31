@@ -1,0 +1,40 @@
+svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text{
+    font: Times;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.tooltip{
+	text-decoration: underline;
+}
+
+#MNREGS2 .scroll {
+  overflow: visible;
+}
+
+div.tooltip { 
+    text-decoration: none;
+    position: absolute;     
+    text-align: center;     
+    width: 181px;          
+    height: 55px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}

@@ -1,0 +1,175 @@
+<html class="gr__data_gov_in"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <title></title>
+  <!--[if IE]>
+    <style>
+    html {
+      overflow-x: hidden;
+    }
+    </style>
+    <![endif]-->
+     <!-- D3.js CDN source -->
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.0/css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet3.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap3.css">
+    <link type="text/css" rel="stylesheet" href="css/c3.css">
+    <link type="text/css" rel="stylesheet" href="css/css_style3.css">
+    <link type="text/css" rel="stylesheet" href="css/theme1_style3.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link type="text/css" rel="stylesheet" href="css/float3.css">
+    
+    
+
+
+</head>
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+	<div id="outer-north" class="ui-layout-north">
+		<div id="header-bar">
+			<div id="header-buttons">
+				<div id="opendataviz-view-operation" class="left">
+					<h1>
+						<span class="logo"><a href="#" title="Home"><img src="img/logo.png"></a></span>
+
+					</h1>					
+					<ul id="menu-list-container" class="opendataviz-menu"></ul>
+					<span id="user-login-info">
+            <button onclick="document.getElementById('id01').style.display='block'" style="
+                padding-left: 26px;
+                margin-left: 6px;
+                width: 115px;
+                height: 55px;
+                margin-right: 0px;
+            ">feedback</button>
+           </button>
+          </span>
+     
+           <!-- =========== FEEDBACK FORM ================= -->
+           <!-- The Modal -->
+          <div id="id01" class="popup">
+            <span onclick="document.getElementById('id01').style.display='none'" 
+          class="close" title="Close Modal">&times;</span>
+            
+           <!-- the Modal Content -->
+           <div class="feedback">
+            <h1>Feedback</h1>
+            <p></p>
+                <div class="form">
+                  <input type="text" placeholder="reg." style="
+                      width: 368px;
+                      height: 52px;
+                        ">
+                    
+                  <textarea name="feedback_text" placeholder="leave a Suggestion or feedback (mail)" style="
+                      padding-top: 6px;
+                      margin-top: 0px;
+                      margin-left: 0px;
+                      width: 368px;
+                      height: 213px;
+                  "></textarea>
+
+                  <input type="text" placeholder="mail of reciepient" style="
+                      width: 368px;
+                      height: 52px;
+                        ">
+                </div>
+                <p>from : Ministry Of rural Development </p>
+                <button class="button small success radius" style="margin-left: 315px" onclick="document.getElementById('id01').style.display='none'">send</button>
+              </div> 
+           </div>
+           <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+           </script>
+
+          <!-- the end of model content -->
+
+				</div>			
+				<div class="clear"></div>
+			</div>
+			
+		</div>	</div>
+		<div class="clear"></div>
+		<div id="outer-center" class="ui-layout-center">
+
+			<div id="overlay-container" style="display: none;"></div>
+			<div class="clear"></div>
+			<div id="inner-center" class="ui-layout-center">
+				<!--<div id = viz_gallery><a href="/visualize/web" title="Visit Our Gallery"><img src="web/theme/viz-new/images/theme1/logo.png" />Gallery</a></div>-->
+				<div id="sidebar" style="display: none;">
+					<ul id="menu-side-list-container" class="left-nav"></ul>	
+				</div>
+				<div id="chart-container">
+					<h4 id="opendataviz-chart-title"></h4>
+					<div id="opendataviz-view-title-content">
+						<center><span id="opendataviz-view-title"><span id="opendataviz-view-note" title="View Note" onclick="showViewNote()"></span></span></center><hr>
+						<svg width="960" height="500"></svg>
+					</div>
+			    </div>
+
+               <a href="#" class="float" id="menu-share">
+					<i class="fa fa-share my-float"></i>
+				</a>
+				<ul id="unol">
+					<li><a href="#">
+						<i class="fa fa-facebook my-float"></i>
+					</a></li>
+					<li><a href="#">
+						<i class="fa fa-google-plus my-float"></i>
+					</a></li>
+					<li><a href="#">
+						<i class="fa fa-twitter my-float"></i>
+					</a></li>
+				</ul>    
+
+				<div id="info" style="display: none;"></div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		<div id="inner-west" class="ui-layout-west">
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="outercenter-botton">
+		<div id="slider" style="display: none;"></div>
+			<!--<div class="dl-share">
+				<a href="/feedback" target="_blank" class="report_bug" title="Report a Bug">Report a Bug</a>
+				<a href="#" onclick="return printPNG()" class="dl" title="Download SVG (Works on Browser Other than IE)">Download</a>
+				<div class="social-media" style="display: none;">
+					<ul>
+						<li><a href="" class="social-icon fb" title="Share with Facebook" onclick="return shareFB()">Facebook</a></li>
+
+						<li><a href="" class="social-icon tt" title="Share with Twitter" onclick="return shareTT()">Twitter</a></li>
+					</ul>
+				</div>-->
+				<a href="#" class="share" title="Share">share</a>
+			</div>
+		</div>
+		<div>
+		</div>
+	    <script type="text/javascript">
+        var title;
+    	if (typeof(Storage) !== "undefined") {
+             // Retrieve
+             title = localStorage.getItem("title");
+        } else {
+	         document.writeln("Sorry, your browser does not support Web Storage...");
+        }
+        document.getElementById("opendataviz-view-title").innerHTML=title;
+    </script>
+    <script type="text/javascript" src="js/feedback.js"></script>
+	<script type="text/javascript" src="js/m12.js"></script>
+	</body>
+	</html>
